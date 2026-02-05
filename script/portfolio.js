@@ -201,16 +201,31 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(style);
     
     // Inicializar con la sección activa
+    // Inicializar con la sección activa
     const activeItem = document.querySelector('.nav-icon-item.active');
     if (activeItem) {
         changeSection(activeItem.dataset.target);
     }
-    
+
     // Añadir efecto de carga inicial
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.5s ease';
-    
+
     setTimeout(() => {
         document.body.style.opacity = '1';
     }, 100);
+
+    // ELIMINA O COMENTA ESTE BLOQUE ↓
+    /*
+    document.addEventListener('keydown', function(e) {
+        // Navegación con teclas 1-4
+        if (e.key >= '1' && e.key <= '4') {
+            const sections = ['about', 'cv', 'projects', 'contact'];
+            const index = parseInt(e.key) - 1;
+            if (sections[index]) {
+                changeSection(sections[index]);
+            }
+        }
+    });
+    */
 });
