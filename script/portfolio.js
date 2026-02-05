@@ -80,25 +80,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ===== DESCARGA DE CV =====
-    const downloadCvBtn = document.getElementById('cv-download-btn');
-    if (downloadCvBtn) {
-        downloadCvBtn.addEventListener('click', function() {
-            // Mostrar mensaje de que el CV está en preparación
-            showNotification('El CV está en proceso de preparación. ¡Pronto estará disponible para descargar!', 'info');
-            
-            // En una implementación real, aquí iría el código para descargar el PDF
-            /*
-            const cvUrl = 'tu-cv.pdf'; // Reemplaza con la URL real de tu CV
-            const link = document.createElement('a');
-            link.href = cvUrl;
-            link.download = 'Diego_Tardon_CV.pdf';
-            link.target = '_blank';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            */
-        });
-    }
+        const downloadCvBtn = document.getElementById('cv-download-btn');
+
+        if (downloadCvBtn) {
+            downloadCvBtn.addEventListener('click', function() {
+                const link = document.createElement('a');
+                link.href = 'Diego-Tardon.CV.pdf'; // nombre exacto del archivo
+                link.download = 'Diego-Tardon.CV.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        }
+
     
     // ===== FORMULARIO DE CONTACTO =====
     const contactForm = document.getElementById('contactForm');
