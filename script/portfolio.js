@@ -214,15 +214,4 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.opacity = '1';
     }, 100);
     
-    // Navegación con teclado (opcional)
-    document.addEventListener('keydown', function(e) {
-        // Navegación con teclas 1-4
-        if (e.key >= '1' && e.key <= '4') {
-            const sections = ['about', 'cv', 'projects', 'contact'];
-            const index = parseInt(e.key) - 1;
-            if (sections[index]) {
-                changeSection(sections[index]);
-            }
-        }
-    });
-});
+    
