@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Diego Tardón</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Card Perfil Compacto (Izquierda) -->
+        <div class="card profile-card">
+            <div class="card-body">
+                <!-- Sección Perfil -->
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile-name">Diego Tardón</h1>
+                        <p class="profile-title">Analista Programador Junior</p>
+                        <p class="profile-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Chile
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Sección Redes Sociales Compacta -->
+                <div class="social-section">
+                    <h3 class="section-title">
+                        <span class="title-text">Redes</span>
+                        <span class="title-line"></span>
+                    </h3>
+                    <div class="social-links-compact">
+                        <a href="https://www.linkedin.com/in/diego-tard%C3%B3n-454246300/" target="_blank" class="social-link-compact" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Diego-Tardon" target="_blank" class="social-link-compact" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/D3npyk" target="_blank" class="social-link-compact" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/diegod.atc" target="_blank" class="social-link-compact" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Sección Información de Contacto Compacta -->
+                <div class="contact-section">
+                    <h3 class="section-title">
+                        <span class="title-text">Contacto</span>
+                        <span class="title-line"></span>
+                    </h3>
+                    <div class="contact-info-compact">
+                        <div class="contact-item-compact">
+                            <i class="fas fa-envelope"></i>
+                            <span class="contact-text">dtardon.acruces@gmail.com</span>
+                        </div>
+                        <div class="contact-item-compact">
+                            <i class="fas fa-phone"></i>
+                            <span class="contact-text">+56 9 6174 8331</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card Contenido (Derecha) -->
+        <div class="card content-card">
+            <div class="card-body">
+                <!-- Contenedor scrollable del contenido -->
+                <div class="content-scrollable">
+                    <!-- Header con título a la izquierda y navegación a la derecha -->
+                    <div class="section-header">
+                        <!-- Título a la izquierda -->
+                        <div class="section-title-left">
+                            <h2 id="dynamic-title">Sobre mí</h2>
+                            <p id="dynamic-subtitle">Analista programador junior, apasionado por la tecnología y la innovación</p>
+                        </div>
+                        
+                        <!-- Navegación a la derecha -->
+                        <div class="header-navigation-right">
+                            <div class="nav-icons-container">
+                                <div class="nav-icon-item active" data-target="about" title="Sobre mí">
+                                    <i class="fas fa-user"></i>
+                                    <span class="nav-tooltip">Sobre mí</span>
+                                </div>
+                                <div class="nav-icon-item" data-target="cv" title="CV">
+                                    <i class="fas fa-file-alt"></i>
+                                    <span class="nav-tooltip">Curriculum</span>
+                                </div>
+                                <div class="nav-icon-item" data-target="projects" title="Proyectos">
+                                    <i class="fas fa-code"></i>
+                                    <span class="nav-tooltip">Proyectos</span>
+                                </div>
+                                <div class="nav-icon-item" data-target="contact" title="Contacto">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="nav-tooltip">Contacto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sección Sobre mí -->
+                    <section class="content-section active" id="about-content">
+                        <div class="about-content">
+                            <p>Hola, soy <strong>Diego Tardón</strong>. Estoy iniciando mi carrera profesional como analista programador junior y me entusiasma trabajar en proyectos desafiantes que me permitan aprender y crecer.</p>
+                            <p>Mi especialidad está en desarrollo web, con experiencia en JavaScript, PHP, MySQL y tecnologías front-end modernas. Me interesa crear soluciones digitales eficientes y mejorar la experiencia de usuario en cada proyecto.</p>
+                            <p>Fuera del trabajo, disfruto investigar nuevas tecnologías, seguir tendencias de desarrollo y contribuir con ideas innovadoras en cada proyecto que realizo.</p>
+                            
+                            <div class="skills-section">
+                                <h3>Habilidades técnicas</h3>
+                                <div class="skills">
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">PHP</span>
+                                    <span class="skill-tag">MySQL</span>
+                                    <span class="skill-tag">HTML</span>
+                                    <span class="skill-tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Sección CV -->
+                    <section class="content-section" id="cv-content">
+                        <div class="cv-content">
+                            <div class="cv-section">
+                                <h3>Formación Académica</h3>
+                                <div class="cv-timeline">
+                                    <div class="cv-item">
+                                        <div class="cv-date">2023 - 2025</div>
+                                        <div class="cv-details">
+                                            <h4>Analista Programador</h4>
+                                            <p class="cv-company">Instituto Profesional Virginio Gómez</p>
+                                            <ul class="cv-responsibilities">
+                                                <li>Especialización en desarrollo de software y programación</li>
+                                                <li>Enfoque en tecnologías web y bases de datos</li>
+                                                <li>Proyectos prácticos en desarrollo de aplicaciones</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="cv-item">
+                                        <div class="cv-date">2018 - 2022</div>
+                                        <div class="cv-details">
+                                            <h4>Técnico en Acuicultura</h4>
+                                            <p class="cv-company">Liceo Penco Politano B-40</p>
+                                            <ul class="cv-responsibilities">
+                                                <li>Formación técnica en sistemas de cultivo acuícola</li>
+                                                <li>Conocimientos en biología marina y medio ambiente</li>
+                                                <li>Prácticas profesionales en centros de investigación</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="cv-item">
+                                        <div class="cv-date">2011 - 2017</div>
+                                        <div class="cv-details">
+                                            <h4>Educación Básica</h4>
+                                            <p class="cv-company">Colegio Forjadores de Chile</p>
+                                            <ul class="cv-responsibilities">
+                                                <li>Formación básica completa</li>
+                                                <li>Desarrollo de habilidades fundamentales</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="cv-section">
+                                <h3>Experiencia Laboral</h3>
+                                <div class="cv-timeline">
+                                    <div class="cv-item">
+                                        <div class="cv-date">Práctica Profesional</div>
+                                        <div class="cv-details">
+                                            <h4>IFOP - Instituto de Fomento Pesquero</h4>
+                                            <p class="cv-company">Práctica en Acuicultura</p>
+                                            <ul class="cv-responsibilities">
+                                                <li>Apoyo en labores técnicas de cultivo acuícola</li>
+                                                <li>Monitoreo de parámetros ambientales y biológicos</li>
+                                                <li>Análisis de datos de proyectos acuícolas</li>
+                                                <li>Colaboración en mantenimiento de sistemas de cultivo</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="cv-item">
+                                        <div class="cv-date">Trabajo Temporal</div>
+                                        <div class="cv-details">
+                                            <h4>Hospital Higueras</h4>
+                                            <p class="cv-company">Ayudante de Gásfiter</p>
+                                            <ul class="cv-responsibilities">
+                                                <li>Mantenimiento de sistemas de agua potable</li>
+                                                <li>Instalación y reparación de sistemas de gas</li>
+                                                <li>Soporte en mantenimiento general de infraestructura</li>
+                                                <li>Trabajo en equipo en entorno hospitalario</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="cv-download">
+                                <button class="download-cv-btn" id="cv-download-btn">
+                                    <i class="fas fa-download"></i>
+                                    <span>Descargar CV Completo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Sección Proyectos -->
+                    <section class="content-section" id="projects-content">
+                        <div class="projects-grid">
+                            <div class="project-card">
+                                <div class="project-tags">
+                                    <span class="project-tag">PHP</span>
+                                    <span class="project-tag">MySQL</span>
+                                    <span class="project-tag">HTML/CSS</span>
+                                    <span class="project-tag">Bootstrap</span>
+                                </div>
+                                <h3>Inventario</h3>
+                                <p>Gestión completa de inventarios para empresas, con control de productos, stock y reportes. Sistema desarrollado con arquitectura MVC y autenticación de usuarios.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/Diego-Tardon/Inventario" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        Ver código
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <div class="project-tags">
+                                    <span class="project-tag">JavaScript</span>
+                                    <span class="project-tag">React</span>
+                                    <span class="project-tag">API REST</span>
+                                    <span class="project-tag">Chart.js</span>
+                                </div>
+                                <h3>CryptoNow</h3>
+                                <p>Aplicación web para seguimiento en tiempo real de criptomonedas, con gráficos interactivos, notificaciones y portfolio personalizado. Consume APIs de múltiples exchanges.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/Diego-Tardon/CryptoNow" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        Ver código
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="project-card">
+                                <div class="project-tags">
+                                    <span class="project-tag">Node.js</span>
+                                    <span class="project-tag">Express</span>
+                                    <span class="project-tag">MongoDB</span>
+                                    <span class="project-tag">Socket.io</span>
+                                </div>
+                                <h3>Campus Inclusivo</h3>
+                                <p>Plataforma educativa para facilitar la inclusión de estudiantes con necesidades especiales. Incluye sistema de chat en tiempo real, foros y recursos adaptativos.</p>
+                                <div class="project-links">
+                                    <a href="https://github.com/Diego-Tardon/Campus-Inclusivo" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        Ver código
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Sección Contacto -->
+                    <section class="content-section" id="contact-content">
+                        <div class="contact-container">
+                            <div class="contact-info-section">
+                                <h3>Información de contacto</h3>
+                                <div class="contact-details">
+                                    <div class="contact-detail-item">
+                                        <div class="contact-detail-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div>
+                                            <h4>Email</h4>
+                                            <p>dtardon.acruces@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-detail-item">
+                                        <div class="contact-detail-icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div>
+                                            <h4>Teléfono</h4>
+                                            <p>+56 9 6174 8331</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-detail-item">
+                                        <div class="contact-detail-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div>
+                                            <h4>Ubicación</h4>
+                                            <p>Chile</p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-detail-item">
+                                        <div class="contact-detail-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div>
+                                            <h4>Disponibilidad</h4>
+                                            <p>Abierto a propuestas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-form-section">
+                                <h3>Enviar mensaje</h3>
+                                <form id="contactForm">
+                                    <div class="form-group">
+                                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="email" name="email" placeholder="Tu email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea id="message" name="message" placeholder="Tu mensaje" rows="6" required></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-btn">
+                                        <i class="fas fa-paper-plane"></i>
+                                        Enviar Mensaje
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para navegación -->
+    <script src="script/portfolio.js"></script>
+</body>
+</html>
