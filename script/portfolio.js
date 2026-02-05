@@ -80,18 +80,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ===== DESCARGA DE CV =====
-        const downloadCvBtn = document.getElementById('cv-download-btn');
+    const downloadCvBtn = document.getElementById('cv-download-btn');
 
-        if (downloadCvBtn) {
-            downloadCvBtn.addEventListener('click', function() {
-                const link = document.createElement('a');
-                link.href = 'Diego-Tardon.CV.pdf'; // nombre exacto del archivo
-                link.download = 'Diego-Tardon.CV.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            });
-        }
+    if (downloadCvBtn) {
+        downloadCvBtn.addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = 'Diego-Tardon.CV.pdf'; // nombre exacto del archivo
+            link.download = 'Diego-Tardon.CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    }
 
     
     // ===== FORMULARIO DE CONTACTO =====
@@ -213,5 +213,4 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         document.body.style.opacity = '1';
     }, 100);
-    
-    
+});
