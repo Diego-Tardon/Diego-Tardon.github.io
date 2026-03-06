@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Diego Tardón</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+<div class="container">
+
+    <!-- Perfil -->
+    <div class="card profile-card">
+        <div class="card-body">
+            <div class="profile-section">
+                <div class="image-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="profile-info">
+                    <h1 class="profile-name">Diego Tardón</h1>
+                    <p class="profile-title">Desarrollador de software Junior</p>
+                    <p class="profile-location"><i class="fas fa-map-marker-alt"></i> Chile</p>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <h3 class="section-title">
+                    <span class="title-text">Redes</span>
+                    <span class="title-line"></span>
+                </h3>
+                <div class="social-links-compact">
+                    <a href="https://www.linkedin.com/in/diego-tard%C3%B3n-454246300/" target="_blank" class="social-link-compact" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Diego-Tardon" target="_blank" class="social-link-compact" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/D3npyk" target="_blank" class="social-link-compact" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/diegod.atc" target="_blank" class="social-link-compact" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-section">
+                <h3 class="section-title">
+                    <span class="title-text">Contacto</span>
+                    <span class="title-line"></span>
+                </h3>
+                <div class="contact-info-compact">
+                    <div class="contact-item-compact">
+                        <i class="fas fa-envelope"></i>
+                        <span class="contact-text">dtardon.acruces@gmail.com</span>
+                    </div>
+                    <div class="contact-item-compact">
+                        <i class="fas fa-phone"></i>
+                        <span class="contact-text">+56 9 6174 8331</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido -->
+    <div class="card content-card">
+        <div class="card-body">
+            <div class="content-scrollable">
+
+                <!-- Header navegación -->
+                <div class="section-header">
+                    <div class="section-title-left">
+                        <h2 id="dynamic-title">Sobre mí</h2>
+                        <p id="dynamic-subtitle">Desarrollador Web Junior con experiencia en PHP, MySQL, MVC y APIs REST</p>
+                    </div>
+                    <div class="header-navigation-right">
+                        <div class="nav-icons-container">
+                            <div class="nav-icon-item active" data-target="about">
+                                <i class="fas fa-user"></i>
+                                <span class="nav-tooltip">Sobre mí</span>
+                            </div>
+                            <div class="nav-icon-item" data-target="cv">
+                                <i class="fas fa-file-alt"></i>
+                                <span class="nav-tooltip">Curriculum</span>
+                            </div>
+                            <div class="nav-icon-item" data-target="projects">
+                                <i class="fas fa-code"></i>
+                                <span class="nav-tooltip">Proyectos</span>
+                            </div>
+                            <div class="nav-icon-item" data-target="contact">
+                                <i class="fas fa-envelope"></i>
+                                <span class="nav-tooltip">Contacto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobre mí -->
+                <section class="content-section active" id="about-content">
+                    <div class="about-content">
+                        <p>Soy <strong>Diego Tardón</strong>, Desarrollador de Software Junior con pasión por construir soluciones bien estructuradas y funcionales. Me caracterizo por ser metódico, autodidacta y comprometido con escribir código limpio y de calidad.</p>
+                        <p>Me interesa el desarrollo tanto frontend como backend, y busco constantemente aprender nuevas tecnologías, enfrentar desafíos reales y crecer como profesional en el mundo del software.</p>
+                        <div class="skills-section">
+                            <h3>Habilidades técnicas</h3>
+                            <div class="skills">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">PHP</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CV -->
+                <section class="content-section" id="cv-content">
+                    <div class="cv-content">
+                        <div class="cv-section">
+                            <h3>Formación Académica</h3>
+                            <div class="cv-timeline">
+                                <div class="cv-item">
+                                    <div class="cv-date">2023 - 2025</div>
+                                    <div class="cv-details">
+                                        <h4>Analista Programador</h4>
+                                        <p class="cv-company">Instituto Profesional Virginio Gómez</p>
+                                        <ul class="cv-responsibilities">
+                                            <li>Especialización en desarrollo de software y programación</li>
+                                            <li>Enfoque en tecnologías web y bases de datos</li>
+                                            <li>Proyectos prácticos en desarrollo de aplicaciones</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cv-item">
+                                    <div class="cv-date">2018 - 2022</div>
+                                    <div class="cv-details">
+                                        <h4>Técnico en Acuicultura</h4>
+                                        <p class="cv-company">Liceo Penco</p>
+                                        <ul class="cv-responsibilities">
+                                            <li>Formación técnica en sistemas de cultivo acuícola</li>
+                                            <li>Conocimientos en biología marina y medio ambiente</li>
+                                            <li>Prácticas profesionales en centros de investigación</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cv-section">
+                            <h3>Experiencia Laboral</h3>
+                            <div class="cv-timeline">
+                                <div class="cv-item">
+                                    <div class="cv-date">Práctica Profesional</div>
+                                    <div class="cv-details">
+                                        <h4>Consultorio DAS Penco</h4>
+                                        <p class="cv-company">Desarrollador Web Practicante</p>
+                                        <ul class="cv-responsibilities">
+                                            <li>Diseño y desarrollo de página web con base de datos relacional</li>
+                                            <li>Implementación con HTML, CSS, JavaScript, PHP y MySQL</li>
+                                            <li>Creación de base de datos con claves primarias y foráneas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cv-item">
+                                    <div class="cv-date">2022 - 2023</div>
+                                    <div class="cv-details">
+                                        <h4>Hospital Higueras</h4>
+                                        <p class="cv-company">Ayudante de Gasfiter</p>
+                                        <ul class="cv-responsibilities">
+                                            <li>Trabajo en construcción y mantenimiento de instalaciones hospitalarias</li>
+                                            <li>Apoyo en labores de gasfitería y reparaciones generales</li>
+                                            <li>Mantenimiento preventivo y correctivo de sistemas hidráulicos</li>
+                                            <li>Colaboración en proyectos de infraestructura del hospital</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="cv-item">
+                                    <div class="cv-date">Práctica Profesional</div>
+                                    <div class="cv-details">
+                                        <h4>IFOP</h4>
+                                        <p class="cv-company">Práctica en Acuicultura</p>
+                                        <ul class="cv-responsibilities">
+                                            <li>Apoyo en labores técnicas de cultivo acuícola</li>
+                                            <li>Monitoreo de parámetros ambientales</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cv-download">
+                            <!-- ¡¡ download cv !! -->
+                            <a href="Cv.Diego-Tardon.pdf" download class="download-cv-btn" id="cv-download-btn">
+                                <i class="fas fa-download"></i>
+                                <span>Descargar CV Completo</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Proyectos -->
+                <section class="content-section" id="projects-content">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                            </div>
+                            <h3>Uno-me</h3>
+                            <p>Juego basado en el clásico UNO. Incluye lógica de turnos y diseño responsive.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Diego-Tardon/uno-me" target="_blank" class="project-link"><i class="fab fa-github"></i> Código</a>
+                                <a href="https://diego-tardon.github.io/uno-me/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-tags">
+                                <span class="project-tag">Kotlin</span>
+                                <span class="project-tag">API REST</span>
+                            </div>
+                            <h3>CryptoNow</h3>
+                            <p>App móvil para seguimiento de criptomonedas con APIs gratuitas.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Diego-Tardon/CryptoNow" target="_blank" class="project-link"><i class="fab fa-github"></i> Ver código</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-tags">
+                                <span class="project-tag">C#</span>
+                                <span class="project-tag">.NET</span>
+                            </div>
+                            <h3>Inventario</h3>
+                            <p>Software de gestión de inventario para tienda pequeña.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Diego-Tardon/Inventario" target="_blank" class="project-link"><i class="fab fa-github"></i> Ver código</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                            </div>
+                            <h3>Campus Inclusivo</h3>
+                            <p>Plataforma educativa enfocada en inclusión.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Diego-Tardon/Campus-Inclusivo" target="_blank" class="project-link"><i class="fab fa-github"></i> Ver código</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-tags">
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">HTML</span>
+                            </div>
+                            <h3>Samuelon</h3>
+                            <p>Linktr.ee personalizado para creador de contenido.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Diego-Tardon/samuelon" target="_blank" class="project-link"><i class="fab fa-github"></i> Código</a>
+                                <a href="https://samuelon.onrender.com/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contacto -->
+                <section class="content-section" id="contact-content">
+                    <div class="contact-container">
+                        <div class="contact-info-section">
+                            <h3>Información de contacto</h3>
+                            <div class="contact-details">
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                                    <div><h4>Email</h4><p>dtardon.acruces@gmail.com</p></div>
+                                </div>
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+                                    <div><h4>Teléfono</h4><p>+56 9 6174 8331</p></div>
+                                </div>
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div><h4>Ubicación</h4><p>Chile</p></div>
+                                </div>
+                                <div class="contact-detail-item">
+                                    <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+                                    <div><h4>Disponibilidad</h4><p>Abierto a propuestas</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-section">
+                            <h3>Enviar mensaje</h3>
+                            <form id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" placeholder="Tu mensaje" rows="6" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="script/portfolio.js"></script>
+</body>
+</html>
